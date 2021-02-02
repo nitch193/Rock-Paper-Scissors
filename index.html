@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="about">
+        <h1>Rock Paper Scissors</h1>
+        <span>Try to beat the computer in 5 rounds</span>
+        <span class="each-round"
+          >👉Click one of the below icons to play your first round👈</span
+        >
+      </div>
+      <div class="game-buttons">
+        <button id="rock" onclick="clicked(this)" class="button">
+          <img src="./assets/axe.svg" />
+        </button>
+        <button id="paper" onclick="clicked(this)" class="button">
+          <img src="./assets/document.svg" />
+        </button>
+        <button id="scissor" onclick="clicked(this)" class="button">
+          <img src="./assets/scissor.svg" />
+        </button>
+      </div>
+      <div class="game-body">
+        <div class="you">
+          <img src="./assets/choose.svg" class="your-choice" alt="" />
+        </div>
+        <div class="result">
+          <h1 class="your-score">0</h1>
+          <h1>-</h1>
+          <h1 class="computer-score">0</h1>
+        </div>
+        <div class="computer">
+          <img src="./assets/pc.svg" class="computer-choice" alt="" />
+        </div>
+      </div>
+      <div>
+        <button class="play-again">Play again</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
